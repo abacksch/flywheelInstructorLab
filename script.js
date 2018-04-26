@@ -34,7 +34,7 @@ audioTag.addEventListener('play', updateProgressState);
 audioTag.addEventListener('playing', updateProgressState);
 
 function updatePlayLabel() {
-  playButton.innerHTML = audioTag.paused ? 'Play track' : 'Pause track';
+  playButton.innerHTML = audioTag.paused ? 'play' : 'pause';
 }
 
 audioTag.addEventListener('play', updatePlayLabel);
